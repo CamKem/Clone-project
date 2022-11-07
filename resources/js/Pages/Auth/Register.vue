@@ -7,7 +7,9 @@ import TextInput from '@/Components/TextInput.vue';
 import { Head, Link, useForm } from '@inertiajs/inertia-vue3';
 
 const form = useForm({
-    name: '',
+    username: '',
+    firstname: '',
+    lastname: '',
     email: '',
     password: '',
     password_confirmation: '',
@@ -27,14 +29,26 @@ const submit = () => {
 
         <form @submit.prevent="submit">
             <div>
-                <InputLabel for="name" value="Name" />
-                <TextInput id="name" type="text" class="mt-1 block w-full" v-model="form.name" required autofocus autocomplete="name" />
-                <InputError class="mt-2" :message="form.errors.name" />
+                <InputLabel for="username" value="Username" />
+                <TextInput id="username"  type="text" class="mt-1 block w-full" v-model="form.username" required autofocus autocomplete="username" />
+                <InputError class="mt-2" :message="form.errors.userName" />
+            </div>
+
+            <div class="mt-4">
+                <InputLabel for="firstname" value="First Name" />
+                <TextInput id="firstname" type="text" class="mt-1 block w-full" v-model="form.firstname" required autofocus autocomplete="firstname" />
+                <InputError class="mt-2" :message="form.errors.firstname" />
+            </div>
+
+            <div class="mt-4">
+                <InputLabel for="lastname" value="Family Name" />
+                <TextInput id="lastname" type="text" class="mt-1 block w-full" v-model="form.lastname" required autofocus autocomplete="lastname" />
+                <InputError class="mt-2" :message="form.errors.lastname" />
             </div>
 
             <div class="mt-4">
                 <InputLabel for="email" value="Email" />
-                <TextInput id="email" type="email" class="mt-1 block w-full" v-model="form.email" required autocomplete="username" />
+                <TextInput id="email" type="email" class="mt-1 block w-full" v-model="form.email" required autocomplete="email" />
                 <InputError class="mt-2" :message="form.errors.email" />
             </div>
 
