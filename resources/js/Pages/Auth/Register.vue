@@ -28,40 +28,45 @@ const submit = () => {
         <Head title="Register" />
 
         <form @submit.prevent="submit">
+
+            <InputError class="mt-2" :message="form.errors.userName" />
+            <InputError class="mt-2" :message="form.errors.firstname" />
+            <InputError class="mt-2" :message="form.errors.lastname" />
+            <InputError class="mt-2" :message="form.errors.email" />
+            <InputError class="mt-2" :message="form.errors.password" />
+            <InputError class="mt-2" :message="form.errors.password_confirmation" />
             <div>
                 <InputLabel for="username" value="Username" />
-                <TextInput id="username"  type="text" class="mt-1 block w-full" v-model="form.username" required autofocus autocomplete="username" />
-                <InputError class="mt-2" :message="form.errors.userName" />
+                <TextInput id="username"  type="text" class="mt-1 block w-full" v-model="form.username" autofocus autocomplete="username" />
             </div>
 
             <div class="mt-4">
                 <InputLabel for="firstname" value="First Name" />
-                <TextInput id="firstname" type="text" class="mt-1 block w-full" v-model="form.firstname" required autofocus autocomplete="firstname" />
-                <InputError class="mt-2" :message="form.errors.firstname" />
+                <TextInput id="firstname" type="text" class="mt-1 block w-full" v-model="form.firstname" autofocus autocomplete="firstname" />
             </div>
 
             <div class="mt-4">
                 <InputLabel for="lastname" value="Family Name" />
-                <TextInput id="lastname" type="text" class="mt-1 block w-full" v-model="form.lastname" required autofocus autocomplete="lastname" />
-                <InputError class="mt-2" :message="form.errors.lastname" />
+                <TextInput id="lastname" type="text" class="mt-1 block w-full" v-model="form.lastname" autofocus autocomplete="lastname" />
+
             </div>
 
             <div class="mt-4">
                 <InputLabel for="email" value="Email" />
-                <TextInput id="email" type="email" class="mt-1 block w-full" v-model="form.email" required autocomplete="email" />
-                <InputError class="mt-2" :message="form.errors.email" />
+                <TextInput id="email" type="email" class="mt-1 block w-full" v-model="form.email" autocomplete="email" />
+
             </div>
 
             <div class="mt-4">
                 <InputLabel for="password" value="Password" />
                 <TextInput id="password" type="password" class="mt-1 block w-full" v-model="form.password" required autocomplete="new-password" />
-                <InputError class="mt-2" :message="form.errors.password" />
+
             </div>
 
             <div class="mt-4">
                 <InputLabel for="password_confirmation" value="Confirm Password" />
                 <TextInput id="password_confirmation" type="password" class="mt-1 block w-full" v-model="form.password_confirmation" required autocomplete="new-password" />
-                <InputError class="mt-2" :message="form.errors.password_confirmation" />
+
             </div>
 
             <div class="flex items-center justify-end mt-4">
