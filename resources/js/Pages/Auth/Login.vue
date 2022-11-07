@@ -61,6 +61,9 @@ const submit = () => {
                 <PrimaryButton class="ml-4" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
                     Log in
                 </PrimaryButton>
+                <PrimaryButton class="ml-4" @click="closeModal">
+                    Close
+                </PrimaryButton>
             </div>
         </form>
     </GuestLayout>

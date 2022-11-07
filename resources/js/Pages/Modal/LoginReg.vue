@@ -1,6 +1,6 @@
 <script>
-import Register from "./Auth/Register.vue";
-import Login from "./Auth/Login";
+import Register from "resources/js/Pages/Auth/Register.vue";
+import Login from "resources/js/Pages/Auth/Login";
 
     export default {
         data: function() {
@@ -10,9 +10,9 @@ import Login from "./Auth/Login";
             };
         },
         components: {
-    Register,
-    Login
-}
+            Register,
+            Login
+        }
     };
 </script>
 
@@ -29,3 +29,4 @@ import Login from "./Auth/Login";
     <component :is="selected" class="tab"></component>
     </div>
 </template>
+
