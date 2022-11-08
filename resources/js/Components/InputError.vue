@@ -4,8 +4,8 @@ defineProps(['message']);
 
 <template>
     <div v-show="message">
-        <p class="text-sm text-red-600">
-            {{ message }}
-        </p>
+        <ul class="mt-3 list-disc list-inside text-sm text-red-600">
+            <li>{{ message }}</li>
+        </ul>
     </div>
 </template>
