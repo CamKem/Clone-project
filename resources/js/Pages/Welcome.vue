@@ -1,7 +1,7 @@
 <script setup>
 import { Head, Link } from '@inertiajs/inertia-vue3';
-//import LoginRegister from 'resources/js/Pages/Modal/LoginRegister.vue';
 import SecondaryButton from '@/Components/SecondaryButton.vue';
+import LoginRegister from '@/Pages/Modal/LoginRegister.vue';
 
 defineProps({
     canLogin: Boolean,
@@ -19,7 +19,7 @@ defineProps({
             <template v-else>
                 <secondary-button :href="route('login')">Login</secondary-button>
                 <secondary-button v-if="canRegister" :href="route('register')">Register</secondary-button>
-                <!--<login-register></login-register>-->
+                <login-register></login-register>
             </template>
         </div>
 

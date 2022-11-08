@@ -7,6 +7,10 @@ import TextInput from '@/Components/TextInput.vue';
 import ValidationErrors from '@/Components/ValidationErrors.vue';
 import { Head, Link, useForm } from '@inertiajs/inertia-vue3';
 
+defineProps ({
+ errors: Object
+});
+
 const form = useForm({
     username: '',
     firstname: '',

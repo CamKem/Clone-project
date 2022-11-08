@@ -8105,6 +8105,50 @@
             "install-path": "../tijsverkoyen/css-to-inline-styles"
         },
         {
+            "name": "tofandel/inertia-vue-modal",
+            "version": "v0.2.26",
+            "version_normalized": "0.2.26.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Tofandel/inertia-vue3-modal.git",
+                "reference": "d4fe9a813e32ae8b7ce28f1eea04cbbdd5b9dc6a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Tofandel/inertia-vue3-modal/zipball/d4fe9a813e32ae8b7ce28f1eea04cbbdd5b9dc6a",
+                "reference": "d4fe9a813e32ae8b7ce28f1eea04cbbdd5b9dc6a",
+                "shasum": ""
+            },
+            "require": {
+                "inertiajs/inertia-laravel": ">=0.5",
+                "php": ">=7.4"
+            },
+            "time": "2022-08-09T08:25:38+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Tofandel\\InertiaVueModal\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Tofandel",
+                    "email": "adrien.foulon@tukan.hu"
+                }
+            ],
+            "description": "Display any inertia page in a modal",
+            "support": {
+                "issues": "https://github.com/Tofandel/inertia-vue3-modal/issues",
+                "source": "https://github.com/Tofandel/inertia-vue3-modal/tree/v0.2.26"
+            },
+            "install-path": "../tofandel/inertia-vue-modal"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v5.5.0",
             "version_normalized": "5.5.0.0",

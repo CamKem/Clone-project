@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5d240b457476fff3bc9eb71566f4298f",
+    "content-hash": "d4f6ec36244fc9cef454eb8cda5d0bc4",
     "packages": [
         {
             "name": "brick/math",
@@ -5282,6 +5282,47 @@
                 "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/2.2.5"
             },
             "time": "2022-09-12T13:28:28+00:00"
+        },
+        {
+            "name": "tofandel/inertia-vue-modal",
+            "version": "v0.2.26",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Tofandel/inertia-vue3-modal.git",
+                "reference": "d4fe9a813e32ae8b7ce28f1eea04cbbdd5b9dc6a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Tofandel/inertia-vue3-modal/zipball/d4fe9a813e32ae8b7ce28f1eea04cbbdd5b9dc6a",
+                "reference": "d4fe9a813e32ae8b7ce28f1eea04cbbdd5b9dc6a",
+                "shasum": ""
+            },
+            "require": {
+                "inertiajs/inertia-laravel": ">=0.5",
+                "php": ">=7.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Tofandel\\InertiaVueModal\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Tofandel",
+                    "email": "adrien.foulon@tukan.hu"
+                }
+            ],
+            "description": "Display any inertia page in a modal",
+            "support": {
+                "issues": "https://github.com/Tofandel/inertia-vue3-modal/issues",
+                "source": "https://github.com/Tofandel/inertia-vue3-modal/tree/v0.2.26"
+            },
+            "time": "2022-08-09T08:25:38+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

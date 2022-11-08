@@ -9,6 +9,7 @@ return array(
     'voku\\' => array($vendorDir . '/voku/portable-ascii/src/voku'),
     'Whoops\\' => array($vendorDir . '/filp/whoops/src/Whoops'),
     'Webmozart\\Assert\\' => array($vendorDir . '/webmozart/assert/src'),
+    'Tofandel\\InertiaVueModal\\' => array($vendorDir . '/tofandel/inertia-vue-modal/src'),
     'TijsVerkoyen\\CssToInlineStyles\\' => array($vendorDir . '/tijsverkoyen/css-to-inline-styles/src'),
     'Tightenco\\Ziggy\\' => array($vendorDir . '/tightenco/ziggy/src'),
     'Tests\\' => array($baseDir . '/tests'),
